@@ -1,0 +1,25 @@
+basic:
+  # 测试模式，将不连接数据库
+  test: false
+
+  # 填写亚马逊的域名,格式如 www.amazon.co.uk, www.amazon.com
+  domain: "www.amazon.de"
+  
+proxy:
+  # 设置是否启动代理
+  enable: false
+  socks5:
+    # 每次请求时随机使用其中一个
+    # 启动socks代理，可以尝试安装gost
+    # gost -L :8080 或 gost -L -L 127.0.0.1:8080
+    - 127.0.0.1:8080
+
+
+# 务必初始化，初始化的ddl文件参考本目录下的sql/文件夹
+# 关键词的初始化参考sql/cateogory.sql
+mysql:
+  ip: "127.0.0.1"
+  port: "3306"
+  username: 
+  password: 
+  database: "amazon"
