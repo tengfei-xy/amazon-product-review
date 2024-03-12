@@ -3,6 +3,7 @@ basic:
   test: false
 
   # 填写亚马逊的域名,格式如 www.amazon.co.uk, www.amazon.com
+  # 目前仅测试了德国地区，其他地区未测试
   domain: "www.amazon.de"
   
 proxy:
@@ -20,6 +21,6 @@ proxy:
 mysql:
   ip: "127.0.0.1"
   port: "3306"
-  username: 
+  username: "amazon_product_review"
   password: 
-  database: "amazon"
+  database: "amazon_product_review"
